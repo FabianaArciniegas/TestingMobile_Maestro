@@ -1,0 +1,17 @@
+appId: org.wikipedia
+---
+- tapOn: "More"
+- tapOn: "LOG IN.*"
+- assertVisible: "LOG IN"
+- tapOn: "LOG IN"
+- runScript: "wikipedia-fetchTestUser.js"
+- tapOn: "Username"
+- inputText:
+    label: "Typing user"
+    text: "${output.test_user.username}"
+- tapOn: "Password"
+- inputText: 
+    label: "Typing password"
+    text: "password"
+- tapOn: "LOG IN"
+- back

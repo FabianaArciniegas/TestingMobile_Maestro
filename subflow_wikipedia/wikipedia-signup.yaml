@@ -1,0 +1,24 @@
+appId: org.wikipedia
+---
+- tapOn: "More"
+- tapOn: "LOG IN.*"
+- assertVisible: "Create an account"
+- runScript: "wikipedia-createCredentials.js"
+- tapOn: "Username"
+- inputText: 
+    label: "Typing user"
+    text: "${output.credentials.username}"
+- tapOn: "Password"
+- inputText: 
+    label: "Typing password"
+    text: "${output.credentials.password}"
+- tapOn: "Repeat Password"
+- inputText: 
+    label: "Confirm Password"
+    text: "${output.credentials.password}"
+- tapOn: "Email.*"
+- inputText:
+    label: "Writing email"
+    text: "${output.credentials.email}"
+- back
+- back

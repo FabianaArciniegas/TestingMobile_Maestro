@@ -1,0 +1,7 @@
+appId: org.wikipedia
+---
+- launchApp:
+    appId: org.wikipedia
+    clearState: true
+- runFlow: "subflow_wikipedia/wikipedia-main.yaml"
+

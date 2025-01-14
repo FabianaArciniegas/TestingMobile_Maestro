@@ -1,0 +1,42 @@
+# En Ingles
+appId: org.wikipedia
+---
+  # features
+- runFlow: "wikipedia-add_language.yaml"
+- runFlow: "wikipedia-remove_language.yaml"
+
+  # onboarding
+- tapOn: "Continue"
+- assertVisible: "New ways to explore"
+- tapOn: "Continue"
+- assertVisible: "Reading lists with sync"
+- tapOn: "Continue"
+- assertVisible: "Send anonymous data"
+- tapOn: "Get started"
+
+  # actions
+- runFlow: "wikipedia-search.yaml"
+- runFlow: "wikipedia-feed.yaml"
+- runFlow: "wikipedia-copy_paste.yaml"
+- runFlow: "wikipedia-save.yaml"
+
+  # authentication
+- runFlow: "wikipedia-signup.yaml"
+- runFlow: "wikipedia-login.yaml"
+
+
+
+# En Español
+# appId: org.wikipedia
+# ---
+# - runFlow: "wikipedia-add_language.yaml"
+# - runFlow: "wikipedia-remove_language.yaml"
+# - tapOn: "Continuar"
+# - assertVisible: "Nuevas formas de explorar"
+# - tapOn: "Continuar"
+# - assertVisible: "Listas de lectura con sincronización"
+# - tapOn: "Continuar"
+# - assertVisible: "Datos y privacidad"
+# - tapOn: "Empezar"
+
+

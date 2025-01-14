@@ -1,0 +1,13 @@
+appId: org.wikipedia
+---
+- tapOn: "Search Wikipedia"
+- inputText: "Sun"
+- assertVisible: "Star at the center of the Solar System"
+- tapOn:
+    id: org.wikipedia:id/page_list_item_title
+- tapOn:
+    id: "org.wikipedia:id/page_save"
+- tapOn: "Navigate up"
+- hideKeyboard
+- back
+    

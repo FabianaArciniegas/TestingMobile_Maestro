@@ -1,0 +1,31 @@
+# En Ingles
+appId: org.wikipedia
+---
+- tapOn: "ADD OR EDIT.*"
+- tapOn: "More options"
+- tapOn: "Remove language"
+- tapOn:
+    id: ".*wiki_language_checkbox"
+    index: 1
+- tapOn:
+    id: ".*menu_delete_selected"
+- tapOn: "OK"
+- assertNotVisible: "Ελληνικά"
+- tapOn: "Navigate up"
+
+
+
+# En Español
+# appId: org.wikipedia
+# ---
+# - tapOn: "Añadir o editar.*"
+# - tapOn: "Más opciones"
+# - tapOn: "Quitar idioma"
+# - tapOn:
+#     id: "org.wikipedia:id/wiki_language_checkbox"
+#     index: 1
+# - tapOn:
+#     id: ".*menu_delete_selected"
+# - tapOn: "Aceptar"
+# - assertNotVisible: "Ελληνικά"
+# - tapOn: "Navegar hacia arriba"
